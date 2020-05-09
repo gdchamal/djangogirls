@@ -15,5 +15,4 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        is_publish = 'yes' if self.published_date else 'no'
-        return self.title + ' publish : ' + is_publish
+        return self.title
